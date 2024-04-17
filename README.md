@@ -26,8 +26,11 @@ functions/
 The project consists of Python scripts running on Firebase Functions to interact with the Firestore database and fetch weather data from the OpenWeatherMap API.
 
 main.py: Contains Firebase Functions to fetch, update, and delete weather data.
+
 requirements.txt: Specifies Python dependencies required for the project.
+
 firebase_credentials.json: JSON file containing Firebase credentials.
+
 .firebaserc: Firebase configuration file.
 
 ## Usage
