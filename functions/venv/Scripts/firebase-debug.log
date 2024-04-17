@@ -1,0 +1,112 @@
+[debug] [2024-04-16T11:57:06.978Z] ----------------------------------------------------------------------
+[debug] [2024-04-16T11:57:06.980Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-04-16T11:57:06.980Z] CLI Version:   13.7.2
+[debug] [2024-04-16T11:57:06.980Z] Platform:      win32
+[debug] [2024-04-16T11:57:06.980Z] Node Version:  v18.20.1
+[debug] [2024-04-16T11:57:06.981Z] Time:          Tue Apr 16 2024 17:27:06 GMT+0530 (India Standard Time)
+[debug] [2024-04-16T11:57:06.981Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-16T11:57:06.986Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-16T11:57:06.986Z] > authorizing via signed-in user (riyamaduraiveeran@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\janan\OneDrive\Desktop\firebase weather\functions\venv\Scripts
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-04-16T11:57:15.853Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-04-16T11:57:16.764Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-04-16T11:57:16.764Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project weather-app-9a897 (weather-app) 
+[info] 
+=== Firestore Setup
+[debug] [2024-04-16T11:57:16.774Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/weather-app-9a897/services/firestore.googleapis.com [none]
+[debug] [2024-04-16T11:57:16.774Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/weather-app-9a897/services/firestore.googleapis.com x-goog-quota-user=projects/weather-app-9a897
+[debug] [2024-04-16T11:57:19.017Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/weather-app-9a897/services/firestore.googleapis.com 200
+[debug] [2024-04-16T11:57:19.017Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/weather-app-9a897/services/firestore.googleapis.com [omitted]
+[debug] [2024-04-16T11:57:19.018Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/weather-app-9a897/databases/(default) [none]
+[debug] [2024-04-16T11:57:19.439Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/weather-app-9a897/databases/(default) 200
+[debug] [2024-04-16T11:57:19.439Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/weather-app-9a897/databases/(default) {"name":"projects/weather-app-9a897/databases/(default)","uid":"7316e3d1-6e41-46dd-89c4-11b92abede69","createTime":"2024-04-04T10:42:35.121122Z","updateTime":"2024-04-04T10:42:35.121122Z","locationId":"asia-south1","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-04-16T10:57:20.625086Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"j","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IIjf6oXXxoUDMLyT8Jv4xYUD"}
+[debug] [2024-04-16T11:57:19.440Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-04-16T11:57:19.441Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-16T11:57:19.441Z] > authorizing via signed-in user (riyamaduraiveeran@gmail.com)
+[debug] [2024-04-16T11:57:19.441Z] [iam] checking project weather-app-9a897 for permissions ["firebase.projects.get"]
+[debug] [2024-04-16T11:57:19.442Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/weather-app-9a897:testIamPermissions [none]
+[debug] [2024-04-16T11:57:19.443Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/weather-app-9a897:testIamPermissions x-goog-quota-user=projects/weather-app-9a897
+[debug] [2024-04-16T11:57:19.443Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/weather-app-9a897:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-04-16T11:57:20.922Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/weather-app-9a897:testIamPermissions 200
+[debug] [2024-04-16T11:57:20.923Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/weather-app-9a897:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-04-16T11:57:21.886Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/weather-app-9a897/releases pageSize=10&pageToken=
+[debug] [2024-04-16T11:57:23.483Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/weather-app-9a897/releases 200
+[debug] [2024-04-16T11:57:23.483Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/weather-app-9a897/releases {"releases":[{"name":"projects/weather-app-9a897/releases/cloud.firestore","rulesetName":"projects/weather-app-9a897/rulesets/e27dc4b6-4233-4b6f-9c94-f1a4b021856e","createTime":"2024-04-04T10:42:54.883976Z","updateTime":"2024-04-04T10:42:54.883976Z"}]}
+[debug] [2024-04-16T11:57:23.483Z] Found ruleset: projects/weather-app-9a897/rulesets/e27dc4b6-4233-4b6f-9c94-f1a4b021856e
+[debug] [2024-04-16T11:57:23.484Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/weather-app-9a897/rulesets/e27dc4b6-4233-4b6f-9c94-f1a4b021856e [none]
+[debug] [2024-04-16T11:57:25.074Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/weather-app-9a897/rulesets/e27dc4b6-4233-4b6f-9c94-f1a4b021856e 200
+[debug] [2024-04-16T11:57:25.075Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/weather-app-9a897/rulesets/e27dc4b6-4233-4b6f-9c94-f1a4b021856e [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-04-16T11:57:25.762Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/weather-app-9a897/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-04-16T11:57:25.764Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/weather-app-9a897/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-04-16T11:57:26.124Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/weather-app-9a897/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-04-16T11:57:26.124Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/weather-app-9a897/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2024-04-16T11:57:26.180Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/weather-app-9a897/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-04-16T11:57:26.181Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/weather-app-9a897/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/weather-app-9a897/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2024-04-16T11:57:26.184Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-16T11:57:26.184Z] > authorizing via signed-in user (riyamaduraiveeran@gmail.com)
+[debug] [2024-04-16T11:57:26.184Z] [iam] checking project weather-app-9a897 for permissions ["firebase.projects.get"]
+[debug] [2024-04-16T11:57:26.185Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/weather-app-9a897:testIamPermissions [none]
+[debug] [2024-04-16T11:57:26.185Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/weather-app-9a897:testIamPermissions x-goog-quota-user=projects/weather-app-9a897
+[debug] [2024-04-16T11:57:26.185Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/weather-app-9a897:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-04-16T11:57:27.589Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/weather-app-9a897:testIamPermissions 200
+[debug] [2024-04-16T11:57:27.589Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/weather-app-9a897:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-04-16T11:57:27.590Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/weather-app-9a897/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-04-16T11:57:27.590Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/weather-app-9a897/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/weather-app-9a897
+[debug] [2024-04-16T11:57:27.592Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/weather-app-9a897/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-04-16T11:57:27.592Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/weather-app-9a897/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/weather-app-9a897
+[debug] [2024-04-16T11:57:29.561Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/weather-app-9a897/services/runtimeconfig.googleapis.com 200
+[debug] [2024-04-16T11:57:29.562Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/weather-app-9a897/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-04-16T11:57:29.563Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/weather-app-9a897/services/cloudfunctions.googleapis.com 200
+[debug] [2024-04-16T11:57:29.563Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/weather-app-9a897/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/requirements.txt 
+[info] +  Wrote functions/.gitignore 
+[info] +  Wrote functions/main.py 
+[debug] [2024-04-16T11:57:42.435Z] Running command with virtualenv: command="C:\Users\janan\OneDrive\Desktop\firebase weather\functions\venv\Scripts\functions\venv\Scripts\activate.bat", args=["","&&","pip3","install","--upgrade","pip"]
+[debug] [2024-04-16T11:57:44.242Z] Error: spawn "C:\Users\janan\OneDrive\Desktop\firebase weather\functions\venv\Scripts\functions\venv\Scripts\activate.bat" ENOENT
+    at notFoundError (C:\Users\janan\AppData\Roaming\nvm\v18.20.1\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\janan\AppData\Roaming\nvm\v18.20.1\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:40:16)
+    at cp.emit (C:\Users\janan\AppData\Roaming\nvm\v18.20.1\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:27:25)
+    at ChildProcess._handle.onexit (node:internal/child_process:292:12)
+[error] 
+[error] Error: An unexpected error has occurred.
