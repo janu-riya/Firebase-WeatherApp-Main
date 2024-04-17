@@ -1,4 +1,4 @@
-# FirebaseCloudFuctions-FIrestore-WeatherApp-Main
+# Firebase-WeatherApp-Main
 This project aims to fetch, update, and delete weather data using Firebase Functions and the OpenWeatherMap API.
 
 ## Folder Structure
